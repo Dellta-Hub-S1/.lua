@@ -7738,7 +7738,7 @@ end)
 local function RemoveSpaces(str)
     return str:gsub(" Fruit", "")
 end
-Devil_Fruit_Sniper_Tab:Toggle("Auto Store Fruits",true,function(a)
+Devil_Fruit_Sniper_Tab:Toggle("Auto Store Fruits", false,function(a)
     AutoStoreFruits = a
     if AutoStoreFruits then
         for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
